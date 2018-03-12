@@ -13,8 +13,8 @@ body {
 .wrapper {
     margin-top: 30px;
     display: inline-block;
-    height: 320px;
-    width: 320px;
+    height: 280px;
+    width: 280px;
     border: 10px solid rgb(185, 185, 185, 0.6);
     box-shadow: 5px 5px 10px rgb(185, 185, 185, 0.8), -5px -5px 10px rgb(185, 185, 185, 0.8);
     padding: 10px;
