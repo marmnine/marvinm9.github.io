@@ -1,0 +1,80 @@
+{
+  "path": "img/bookmark_pictures/",
+  "data": [
+    {
+      "name": "Telegram",
+      "picture": "telegram.png",
+      "link": "https://web.telegram.org/#/im"
+    },
+    {
+      "name": "Whatsapp",
+      "picture": "whatsapp.png",
+      "link": "https://web.whatsapp.com"
+    },
+    {
+      "name": "Outlook",
+      "picture": "outlook.png",
+      "link": "https://msx.tu-dresden.de/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fmsx.tu-dresden.de%2fowa%2f"
+    },
+    {
+      "name": "GMail",
+      "picture": "gmail.png",
+      "link": "https://mail.google.com/"
+    },
+    {
+      "name": "Calender",
+      "picture": "calender.png",
+      "link": "https://calendar.google.com"
+    },
+    {
+      "name": "Translate",
+      "picture": "google_translate.png",
+      "link": "https://translate.google.de/?hl=en&tab=TT#de/"
+    },
+    {
+      "name": "Linguee",
+      "picture": "linguee.jpg",
+      "link": "http://www.linguee.de/englisch-deutsch/"
+    },
+    {
+      "name": "Deezer",
+      "picture": "deezer.png",
+      "link": "https://www.deezer.com/"
+    },
+    {
+      "name": "Youtube",
+      "picture": "youtube.png",
+      "link": "https://www.youtube.com"
+    },
+    {
+      "name": "Twitch",
+      "picture": "twitch.png",
+      "link": "https://www.twitch.tv/"
+    },
+    {
+      "name": "Bundestag",
+      "picture": "bundestag.png",
+      "link": "https://www.bundestag.de/"
+    },
+    {
+      "name": "Tagesschau",
+      "picture": "tagesschau.jpg",
+      "link": "http://www.tagesschau.de/sendung/tagesschau/index.html"
+    },
+    {
+      "name": "Bitbucket",
+      "picture": "bitbucket.png",
+      "link": "https://bitbucket.org/dashboard/overview"
+    },
+    {
+      "name": "Github",
+      "picture": "github.png",
+      "link": "https://github.com/login"
+    },
+    {
+      "name": "Sparkasse",
+      "picture": "sparkasse.png",
+      "link": "https://www.ostsaechsische-sparkasse-dresden.de"
+    }
+  ]
+}

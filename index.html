@@ -1,39 +1,31 @@
-<!DOCTYPE html>
-<html lang="de">
-
+<!doctype html>
+<html class="no-js" lang="">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bookmarks</title>
-
-    <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
-
-    <script src="js/jquery-3.2.1.min.js"></script>
-
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
 
-    <picture class="background-picture">
-        <source srcset="source/img/width_1920/city_night.jpg" media="(max-width: 1920px)">
-        <source srcset="source/img/width_2560/city_night.jpg" media="(max-width: 2560px)">
-        <source srcset="source/img/width_max/city_night.jpg" media="(min-width: 2561px)">
-        <img src="">
-    </picture>
+<main>
+    <input id="searchBox" type="text" placeholder="Ask me Senpai ＼(>o<)ノ" autofocus>
 
-    <input id="searchBox" type="text" placeholder="Engage!" autofocus>
-
-    <div class="position-Helper">
-        <div class="scrollbox-Cover">
-            <div class="bookmarksWrapper"></div>
+    <section>
+        <div class="bookmark-viewer">
         </div>
-    </div>
+    </section>
+</main>
 
-    <script src="js/loadAndSizeBookmarks.js"></script>
-    <script src="js/logicInGeneral.js"></script>
+<img class="myBackground" src="img/backgrounds/city_night.jpeg"/>
+
+<script src="js/vendor/jquery-3.2.1.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 
 </body>
-
 </html>

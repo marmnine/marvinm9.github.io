@@ -1,0 +1,11 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# THANKS
+
+    <name> Vincent
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Normalize.css
