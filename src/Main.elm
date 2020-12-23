@@ -39,7 +39,7 @@ type alias Model =
     {}
 
 
-init : val -> Url -> Key -> ( Model, Cmd Msg )
+init : Int -> Url -> Key -> ( Model, Cmd Msg )
 init _ url key =
     ( {}
     , Cmd.none
@@ -110,6 +110,7 @@ myIframe =
             , style "height" "530"
             , style "patting" "0"
             , style "margin" "0"
+            , style "margin-left" "45"
             , style "border" "0"
             , style "content" "0"
             , srcdoc "<iframe width='895' height='506' src='https://www.youtube.com/embed/RxjLwsbTzMc' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"

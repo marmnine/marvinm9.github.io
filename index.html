@@ -12021,6 +12021,7 @@ var $author$project$Main$myIframe = $mdgriffith$elm_ui$Element$html(
 				A2($elm$html$Html$Attributes$style, 'height', '530'),
 				A2($elm$html$Html$Attributes$style, 'patting', '0'),
 				A2($elm$html$Html$Attributes$style, 'margin', '0'),
+				A2($elm$html$Html$Attributes$style, 'margin-left', '45'),
 				A2($elm$html$Html$Attributes$style, 'border', '0'),
 				A2($elm$html$Html$Attributes$style, 'content', '0'),
 				$elm$html$Html$Attributes$srcdoc('<iframe width=\'895\' height=\'506\' src=\'https://www.youtube.com/embed/RxjLwsbTzMc\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\' allowfullscreen></iframe>')
@@ -12190,7 +12191,8 @@ var $author$project$Main$main = $elm$browser$Browser$application(
 	{init: $author$project$Main$init, onUrlChange: $author$project$Main$UrlChanged, onUrlRequest: $author$project$Main$LinkClicked, subscriptions: $author$project$Main$subscriptions, update: $author$project$Main$update, view: $author$project$Main$view});
 _Platform_export({'Main':{'init':$author$project$Main$main($elm$json$Json$Decode$int)(0)}});}(this));
 
-  var app = Elm.Main.init({ node: document.getElementById("elm") });
+  var app = Elm.Main.init({ node: document.getElementById("elm"),
+flags: 10 });
 }
 catch (e)
 {
