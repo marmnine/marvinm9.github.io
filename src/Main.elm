@@ -94,12 +94,12 @@ pageContent =
             400
     in
     column
-        [ centerX, centerY ]
+        [ height (fill |> maximum 1900), centerX, centerY ]
         [ el [ centerX, color <| rgb255 234 175 65, size eve, onRight <| el [ color <| rgb255 234 175 65, size eve ] (text ".") ] <| text "24"
-        , el [ centerX, color <| rgb255 234 175 65, size 45, moveUp 30, moveRight 200 ] <| text "Türchen"
-        , el [ centerX, width <| px 530, height <| px 895, paddingEach { top = 70, bottom = 105, left = 0, right = 0 } ] myIframe
+        , el [ centerX, color <| rgb255 234 175 65, size 45, moveUp 30, moveRight 196 ] <| text "Türchen"
+        , el [ centerX, width shrink, height shrink, paddingEach { top = 70, bottom = 240, left = 0, right = 0 } ] myIframe
         , el [ centerX ] myButton
-        , el [ centerX, height <| px eve ] none
+        , el [ height (fill |> maximum 400), width fill ] none
         ]
 
 
@@ -109,13 +109,15 @@ myIframe =
         iframe
             [ style "width" "fill"
             , style "border-style" "solid"
-            , style "height" "530"
-            , style "width" "895"
+            , style "height" "400"
+            , style "width" "665"
             , style "patting" "0"
             , style "margin" "0"
             , style "border" "0"
             , style "content" "0"
-            , srcdoc "<iframe width='available' height='available' src='https://www.youtube.com/embed/RxjLwsbTzMc' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+            , srcdoc "<iframe width='643' height='380' margin='0' padding='0' content='0' border='0' src='https://www.youtube.com/embed/RxjLwsbTzMc' frameborder='0' ></iframe>"
+
+            {- frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen -}
             ]
             []
 
