@@ -95,9 +95,10 @@ pageContent =
     in
     column
         [ height (fill |> maximum 1900), centerX, centerY ]
-        [ el [ centerX, color <| rgb255 234 175 65, size eve, onRight <| el [ color <| rgb255 234 175 65, size eve ] (text ".") ] <| text "24"
+        [ el [ height (fill |> maximum 300), width fill ] none
+        ,el [ centerX, color <| rgb255 234 175 65, size eve, onRight <| el [ color <| rgb255 234 175 65, size eve ] (text ".") ] <| text "24"
         , el [ centerX, color <| rgb255 234 175 65, size 45, moveUp 30, moveRight 196 ] <| text "Türchen"
-        , el [ centerX, centerY ] myButton
+        , el [ centerX, paddingEach {top=800, bottom=0,left =0, right=0}] myButton
         , el [ height (fill |> maximum 400), width fill ] none
         ]
 
