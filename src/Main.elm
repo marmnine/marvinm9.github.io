@@ -60,7 +60,7 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         StartDownload ->
-            ( model, FileDownload.url "https://marvinm9.github.io/audio.mp3" )
+            ( model, FileDownload.url "https://marvinm9.github.io/audio24.mp3" )
 
         _ ->
             ( model, Cmd.none )
@@ -97,29 +97,31 @@ pageContent =
         [ height (fill |> maximum 1900), centerX, centerY ]
         [ el [ centerX, color <| rgb255 234 175 65, size eve, onRight <| el [ color <| rgb255 234 175 65, size eve ] (text ".") ] <| text "24"
         , el [ centerX, color <| rgb255 234 175 65, size 45, moveUp 30, moveRight 196 ] <| text "Türchen"
-        , el [ centerX, paddingEach { top = 70, bottom = 240, left = 0, right = 0 } ] myIframe
-        , el [ centerX ] myButton
+        , el [ centerX, centerY ] myButton
         , el [ height (fill |> maximum 400), width fill ] none
         ]
 
 
-myIframe : Element msg
-myIframe =
-    html <|
-        iframe
-            [ style "width" "fill"
-            , style "border-style" "solid"
-            , style "height" "300"
-            , style "width" "500"
-            , style "patting" "auto"
-            , style "margin" "auto"
-            , style "border" "0"
-            , style "content" "0"
-            , srcdoc "<iframe padding='0px' margin='0px' border='0px' content='0px' frameborder='0' width='400' height='200' src='https://drive.google.com/file/d/1xVmI8J9FiHTzMyVgNKKojPHJ8yXb3sod/preview'> </iframe>"
 
-            {- https://drive.google.com/file/d/1xVmI8J9FiHTzMyVgNKKojPHJ8yXb3sod/view?usp=sharing -}
-            ]
-            []
+{-
+   myIframe : Element msg
+   myIframe =
+       html <|
+           iframe
+               [ style "width" "fill"
+               , style "border-style" "solid"
+               , style "height" "300"
+               , style "width" "500"
+               , style "patting" "auto"
+               , style "margin" "auto"
+               , style "border" "0"
+               , style "content" "0"
+               , srcdoc "<iframe padding='0px' margin='0px' border='0px' content='0px' frameborder='0' width='400' height='200' src='https://drive.google.com/file/d/1xVmI8J9FiHTzMyVgNKKojPHJ8yXb3sod/preview'> </iframe>"
+
+               {- https://drive.google.com/file/d/1xVmI8J9FiHTzMyVgNKKojPHJ8yXb3sod/view?usp=sharing -}
+               ]
+               []
+-}
 
 
 myButton : Element Msg

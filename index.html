@@ -5408,7 +5408,7 @@ var $author$project$Main$update = F2(
 		if (msg.$ === 'StartDownload') {
 			return _Utils_Tuple2(
 				model,
-				$elm$file$File$Download$url('https://marvinm9.github.io/audio.mp3'));
+				$elm$file$File$Download$url('https://marvinm9.github.io/audio24.mp3'));
 		} else {
 			return _Utils_Tuple2(model, $elm$core$Platform$Cmd$none);
 		}
@@ -12021,24 +12021,6 @@ var $author$project$Main$myButton = A2(
 				])),
 		onPress: $elm$core$Maybe$Just($author$project$Main$StartDownload)
 	});
-var $elm$html$Html$iframe = _VirtualDom_node('iframe');
-var $elm$html$Html$Attributes$srcdoc = $elm$html$Html$Attributes$stringProperty('srcdoc');
-var $author$project$Main$myIframe = $mdgriffith$elm_ui$Element$html(
-	A2(
-		$elm$html$Html$iframe,
-		_List_fromArray(
-			[
-				A2($elm$html$Html$Attributes$style, 'width', 'fill'),
-				A2($elm$html$Html$Attributes$style, 'border-style', 'solid'),
-				A2($elm$html$Html$Attributes$style, 'height', '300'),
-				A2($elm$html$Html$Attributes$style, 'width', '500'),
-				A2($elm$html$Html$Attributes$style, 'patting', 'auto'),
-				A2($elm$html$Html$Attributes$style, 'margin', 'auto'),
-				A2($elm$html$Html$Attributes$style, 'border', '0'),
-				A2($elm$html$Html$Attributes$style, 'content', '0'),
-				$elm$html$Html$Attributes$srcdoc('<iframe padding=\'0px\' margin=\'0px\' border=\'0px\' content=\'0px\' frameborder=\'0\' width=\'400\' height=\'200\' src=\'https://drive.google.com/file/d/1xVmI8J9FiHTzMyVgNKKojPHJ8yXb3sod/preview\'> </iframe>')
-			]),
-		_List_Nil));
 var $mdgriffith$elm_ui$Element$none = $mdgriffith$elm_ui$Internal$Model$Empty;
 var $mdgriffith$elm_ui$Internal$Model$OnRight = {$: 'OnRight'};
 var $mdgriffith$elm_ui$Element$createNearby = F2(
@@ -12051,40 +12033,6 @@ var $mdgriffith$elm_ui$Element$createNearby = F2(
 	});
 var $mdgriffith$elm_ui$Element$onRight = function (element) {
 	return A2($mdgriffith$elm_ui$Element$createNearby, $mdgriffith$elm_ui$Internal$Model$OnRight, element);
-};
-var $mdgriffith$elm_ui$Internal$Model$paddingName = F4(
-	function (top, right, bottom, left) {
-		return 'pad-' + ($elm$core$String$fromInt(top) + ('-' + ($elm$core$String$fromInt(right) + ('-' + ($elm$core$String$fromInt(bottom) + ('-' + $elm$core$String$fromInt(left)))))));
-	});
-var $mdgriffith$elm_ui$Element$paddingEach = function (_v0) {
-	var top = _v0.top;
-	var right = _v0.right;
-	var bottom = _v0.bottom;
-	var left = _v0.left;
-	if (_Utils_eq(top, right) && (_Utils_eq(top, bottom) && _Utils_eq(top, left))) {
-		var topFloat = top;
-		return A2(
-			$mdgriffith$elm_ui$Internal$Model$StyleClass,
-			$mdgriffith$elm_ui$Internal$Flag$padding,
-			A5(
-				$mdgriffith$elm_ui$Internal$Model$PaddingStyle,
-				'p-' + $elm$core$String$fromInt(top),
-				topFloat,
-				topFloat,
-				topFloat,
-				topFloat));
-	} else {
-		return A2(
-			$mdgriffith$elm_ui$Internal$Model$StyleClass,
-			$mdgriffith$elm_ui$Internal$Flag$padding,
-			A5(
-				$mdgriffith$elm_ui$Internal$Model$PaddingStyle,
-				A4($mdgriffith$elm_ui$Internal$Model$paddingName, top, right, bottom, left),
-				top,
-				right,
-				bottom,
-				left));
-	}
 };
 var $author$project$Main$pageContent = function () {
 	var eve = 400;
@@ -12134,16 +12082,7 @@ var $author$project$Main$pageContent = function () {
 				A2(
 				$mdgriffith$elm_ui$Element$el,
 				_List_fromArray(
-					[
-						$mdgriffith$elm_ui$Element$centerX,
-						$mdgriffith$elm_ui$Element$paddingEach(
-						{bottom: 240, left: 0, right: 0, top: 70})
-					]),
-				$author$project$Main$myIframe),
-				A2(
-				$mdgriffith$elm_ui$Element$el,
-				_List_fromArray(
-					[$mdgriffith$elm_ui$Element$centerX]),
+					[$mdgriffith$elm_ui$Element$centerX, $mdgriffith$elm_ui$Element$centerY]),
 				$author$project$Main$myButton),
 				A2(
 				$mdgriffith$elm_ui$Element$el,
