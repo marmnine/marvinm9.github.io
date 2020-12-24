@@ -75,7 +75,9 @@ view model =
     { title = "Weihnachten 2020"
     , body =
         [ layout
-            [ Background.gradient
+            [ width fill
+            , height fill
+            , Background.gradient
                 { angle = -1.1
                 , steps = [ rgb255 0 34 27, rgb255 1 20 22 ]
                 }
@@ -95,7 +97,7 @@ pageContent =
         [ centerX, centerY ]
         [ el [ centerX, color <| rgb255 234 175 65, shadow { offset = ( 10, 17 ), blur = 10, color = rgb255 0 25 18 }, size eve ] <| text "24."
         , el [ centerX, color <| rgb255 234 175 65, size 45, moveUp 30, moveRight 123 ] <| text "Türchen"
-        , el [ centerX, width <| px 1000, height shrink, paddingEach { top = 70, bottom = 105, left = 0, right = 0 } ] myIframe
+        , el [ centerX, width shrink, height shrink, paddingEach { top = 70, bottom = 105, left = 0, right = 0 } ] myIframe
         , el [ centerX ] myButton
         , el [ centerX, height <| px eve ] none
         ]
@@ -108,9 +110,9 @@ myIframe =
             [ style "width" "fill"
             , style "border-style" "solid"
             , style "height" "530"
+            , style "width" "895"
             , style "patting" "0"
             , style "margin" "0"
-            , style "margin-left" "45"
             , style "border" "0"
             , style "content" "0"
             , srcdoc "<iframe width='895' height='506' src='https://www.youtube.com/embed/RxjLwsbTzMc' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
