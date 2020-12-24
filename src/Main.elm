@@ -97,7 +97,7 @@ pageContent =
         [ height (fill |> maximum 1900), centerX, centerY ]
         [ el [ centerX, color <| rgb255 234 175 65, size eve, onRight <| el [ color <| rgb255 234 175 65, size eve ] (text ".") ] <| text "24"
         , el [ centerX, color <| rgb255 234 175 65, size 45, moveUp 30, moveRight 196 ] <| text "Türchen"
-        , el [ centerX, width shrink, height shrink, paddingEach { top = 70, bottom = 240, left = 0, right = 0 } ] myIframe
+        , el [ centerX, paddingEach { top = 70, bottom = 240, left = 0, right = 0 } ] myIframe
         , el [ centerX ] myButton
         , el [ height (fill |> maximum 400), width fill ] none
         ]
@@ -109,15 +109,15 @@ myIframe =
         iframe
             [ style "width" "fill"
             , style "border-style" "solid"
-            , style "height" "400"
-            , style "width" "665"
-            , style "patting" "0"
-            , style "margin" "0"
+            , style "height" "300"
+            , style "width" "500"
+            , style "patting" "auto"
+            , style "margin" "auto"
             , style "border" "0"
             , style "content" "0"
-            , srcdoc "<iframe width='643' height='380' margin='0' padding='0' content='0' border='0' src='https://www.youtube.com/embed/RxjLwsbTzMc' frameborder='0' ></iframe>"
+            , srcdoc "<iframe padding='0px' margin='0px' border='0px' content='0px' frameborder='0' width='400' height='200' src='https://drive.google.com/file/d/1xVmI8J9FiHTzMyVgNKKojPHJ8yXb3sod/preview'> </iframe>"
 
-            {- frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen -}
+            {- https://drive.google.com/file/d/1xVmI8J9FiHTzMyVgNKKojPHJ8yXb3sod/view?usp=sharing -}
             ]
             []
 
